@@ -4,28 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cartoon</title>
-
-    <!-- bs-stylesheet -->
+    <title>E Book</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
-    <!-- bs-stylesheet -->
-
-    <!-- bs-icons -->
+    <!-- bs icons -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
-    <!-- bs-icons -->
-
     <style>
-      .c-item {
-        height: calc(100vh - 60px);
+      section {
+        padding: 60px 0;
       }
+
+      .c-item {
+        height: calc(100vh - 100px);
+      }
+
       .c-image {
         height: 100%;
         object-fit: cover;
@@ -33,7 +32,7 @@
     </style>
   </head>
   <body>
-    <!-- nav -->
+    <!-- navbar -->
     <nav class="navbar navbar-expand-md navbar-light">
       <div class="container-xxl">
         <a href="#intro" class="navbar-brand">
@@ -53,7 +52,6 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <!-- toggle btn for mobile nav -->
 
         <div
           class="collapse navbar-collapse justify-content-end align-center"
@@ -79,7 +77,7 @@
         </div>
       </div>
     </nav>
-    <!-- nav -->
+    <!-- navbar -->
 
     <!-- carousel -->
     <div
@@ -119,7 +117,7 @@
           <div
             class="carousel-caption d-flex justify-content-center align-items-center flex-column h-100"
           >
-            <p class="lead text-bg-info align-self-stretch bg-secondary">
+            <p class="lead text-bg-info align-self-stretch">
               World of knowledge
             </p>
           </div>
@@ -133,9 +131,7 @@
           <div
             class="carousel-caption d-flex justify-content-center align-items-center flex-column h-100"
           >
-            <p class="lead text-bg-info align-self-stretch bg-secondary">
-              World of coding
-            </p>
+            <p class="lead text-bg-info align-self-stretch">World of coding</p>
           </div>
         </div>
         <div class="carousel-item c-item">
@@ -147,7 +143,7 @@
           <div
             class="carousel-caption d-flex justify-content-center align-items-center flex-column h-100"
           >
-            <p class="lead text-bg-info align-self-stretch bg-secondary">
+            <p class="lead text-bg-info align-self-stretch">
               World of learning
             </p>
           </div>
@@ -174,10 +170,11 @@
     </div>
     <!-- carousel -->
 
-    <!-- hero -->
+    <!-- main image and intro -->
     <section id="intro">
       <div class="container-lg">
         <div class="row justify-content-center align-items-center">
+          <!-- text content -->
           <div class="col-md-5 text-center text-md-start">
             <h1>
               <div class="display-2">Have fun</div>
@@ -199,9 +196,11 @@
                 aria-controls="sidebar"
                 >Explore my other books</a
               >
-              <!-- off-canvas -->
             </p>
           </div>
+          <!-- text content -->
+
+          <!-- img -->
           <div class="col-md-5 text-center d-none d-sm-block">
             <span
               data-bs-toggle="tooltip"
@@ -215,12 +214,13 @@
               />
             </span>
           </div>
+          <!-- img -->
         </div>
       </div>
     </section>
-    <!-- hero -->
+    <!-- main image and intro -->
 
-    <!-- pricing -->
+    <!-- pricing-plain -->
     <section id="pricing" class="bg-light mt-5">
       <div class="container-lg">
         <div class="text-center">
@@ -287,9 +287,9 @@
         </div>
       </div>
     </section>
-    <!-- pricing -->
+    <!-- pricing-plain -->
 
-    <!-- book content -->
+    <!-- topics at a glance -->
     <section id="topics">
       <div class="container-md">
         <div class="text-center">
@@ -499,13 +499,13 @@
         </div>
       </div>
     </section>
-    <!-- book content -->
+    <!-- topics at a glance -->
 
-    <!-- book review -->
+    <!-- reviews list -->
     <section id="reviews" class="bg-light">
       <div class="container-lg">
         <div class="text-center">
-          <h2><i class="bi bi-moon-stars"></i> Book Reviews</h2>
+          <h2><i class="bi bi-stars"></i> Book Reviews</h2>
           <p class="lead">What my students have said about the book...</p>
         </div>
 
@@ -520,8 +520,8 @@
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
 
-                  <i class="bi bi-star-half"></i>
                   <i class="bi bi-star"></i>
+                  <i class="bi bi-star-half"></i>
                 </div>
                 <h5 class="mb-1">A must buy for kids</h5>
                 <p class="mb-1">
@@ -606,9 +606,9 @@
         </div>
       </div>
     </section>
-    <!-- book review -->
+    <!-- reviews list -->
 
-    <!-- tab -->
+    <!-- tabs -->
     <section>
       <div class="container my-5">
         <nav>
@@ -725,9 +725,9 @@
         </div>
       </div>
     </section>
-    <!-- tab -->
+    <!-- tabs -->
 
-    <!-- contact form -->
+    <!-- contact-form -->
     <section id="contact">
       <div class="container-lg">
         <div class="text-center">
@@ -741,13 +741,13 @@
           <div class="col-lg-6">
             <form action="">
               <!-- <label for="email" class="form-label">Email:</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  name=""
-                  id="email"
-                  placeholder="e.g. mario@hype.com"
-                /> -->
+              <input
+                type="email"
+                class="form-control"
+                name=""
+                id="email"
+                placeholder="e.g. mario@hype.com"
+              /> -->
 
               <label for="email" class="form-label">Email:</label>
               <div class="mb-4 input-group">
@@ -771,17 +771,16 @@
                     <i class="bi bi-question-circle text-muted"></i>
                   </span>
                 </span>
-                <!-- tooltip -->
               </div>
 
               <!-- <label for="name" class="form-labe">Name:</label>
-                <input
-                  type="text"
-                  name=""
-                  id="name"
-                  class="form-control"
-                  placeholder="e.g. Mario"
-                /> -->
+              <input
+                type="text"
+                name=""
+                id="name"
+                class="form-control"
+                placeholder="e.g. Mario"
+              /> -->
 
               <label for="name" class="form-label">Name:</label>
               <div class="mb-4 input-group">
@@ -808,13 +807,13 @@
               </div>
 
               <!-- <label for="subject" class="form-label"
-                  >What is your question about?</label
-                >
-                <select name="" id="subject" class="form-select">
-                  <option value="pricing" selected>Pricing</option>
-                  <option value="content">Content Query</option>
-                  <option value="others">Other Query</option>
-                </select> -->
+                >What is your question about?</label
+              >
+              <select name="" id="subject" class="form-select">
+                <option value="pricing" selected>Pricing</option>
+                <option value="content">Content Query</option>
+                <option value="others">Other Query</option>
+              </select> -->
               <label for="subject" class="form-label"
                 >What is your question about?</label
               >
@@ -847,9 +846,9 @@
         </div>
       </div>
     </section>
-    <!-- contact form -->
+    <!-- contact-form -->
 
-    <!-- footer -->
+    <!-- get updaes -->
     <section class="bg-light">
       <div class="container">
         <div class="text-center">
@@ -878,7 +877,7 @@
         </div>
       </div>
     </section>
-    <!-- footer -->
+    <!-- get updaes -->
 
     <!-- modal -->
     <div
@@ -921,64 +920,66 @@
           </div>
 
           <div class="modal-footer">
-            <button class="btn btn-primary" data-bs-dismiss="modal">
-              Submit
-            </button>
+            <button class="btn btn-primary">Submit</button>
           </div>
         </div>
       </div>
     </div>
     <!-- modal -->
 
-    <!-- off-canvas -->
+    <!-- offcanvas -->
     <div
       class="offcanvas offcanvas-start"
       tabindex="-1"
       id="sidebar"
-      aria-labelledby="offcanvasExampleLabel"
+      aria-labelledby="sidebar-label"
     >
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+        <h5 class="offcanvas-title" id="sidebar-label">My other books</h5>
         <button
+          class="btn-close"
           type="button"
-          class="btn-close text-reset"
           data-bs-dismiss="offcanvas"
-          aria-label="Close"
+          aria-label="close"
         ></button>
       </div>
       <div class="offcanvas-body">
-        <div>
-          Some text as placeholder. In real life you can have the elements you
-          have chosen. Like, text, images, lists, etc.
-        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          impedit magnam dicta! Eaque repellat earum accusamus nam aperiam, sint
+          pariatur incidunt quisquam. Voluptatum perferendis delectus veritatis,
+          earum iusto amet eveniet?
+        </p>
+
+        <!-- drop-down -->
         <div class="dropdown mt-3">
           <button
             class="btn btn-secondary dropdown-toggle"
             type="button"
-            id="dropdownMenuButton"
+            id="book-dropdown"
             data-bs-toggle="dropdown"
           >
-            Dropdown button
+            Choose a book title
           </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+
+          <ul class="dropdown-menu" aria-labelledby="book-dropdown">
+            <li>
+              <a href="#" class="dropdown-item">Become a React Superhero</a>
+            </li>
+            <li><a href="#" class="dropdown-item">Conquering Vue.js</a></li>
+            <li><a href="#" class="dropdown-item">Level up Next.js</a></li>
           </ul>
         </div>
       </div>
     </div>
-    <!-- off-canvas -->
+    <!-- offcanvas -->
 
-    <!-- bootstrap script bundle -->
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
-    <!-- bootstrap script bundle -->
 
-    <!-- code to enable tooltip -->
     <script>
       var tooltipTriggerList = [].slice.call(
         document.querySelectorAll('[data-bs-toggle="tooltip"]')
@@ -987,6 +988,5 @@
         return new bootstrap.Tooltip(tooltipTriggerEl);
       });
     </script>
-    <!-- code to enable tooltip -->
   </body>
 </html>
