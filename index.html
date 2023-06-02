@@ -851,34 +851,124 @@
 
     <!-- footer -->
     <section class="bg-light">
-        <div class="container">
-          <div class="text-center">
-            <h2>Stay in the Loop</h2>
-            <p class="lead">Get tge latest updates as they happen...</p>
-          </div>
-  
-          <div class="row justify-content-center">
-            <div class="col-md-8 text-center">
-              <p class="text-muted my-4">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam
-                nostrum provident aliquid magni neque, vel voluptatibus quasi
-                possimus delectus commodi beatae recusandae necessitatibus autem
-                error, unde officia! A distinctio est porro. Eaque, odit nesciunt
-                quidem dolorum rem tempora cum dignissimos explicabo distinctio
-                dolor fugit autem. Placeat est repellat officiis illum.
-              </p>
-              <button
-                class="btn btn-primary"
-                data-bs-toggle="modal"
-                data-bs-target="#reg-modal"
-              >
-                Register for updates
-              </button>
-            </div>
+      <div class="container">
+        <div class="text-center">
+          <h2>Stay in the Loop</h2>
+          <p class="lead">Get tge latest updates as they happen...</p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <p class="text-muted my-4">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam
+              nostrum provident aliquid magni neque, vel voluptatibus quasi
+              possimus delectus commodi beatae recusandae necessitatibus autem
+              error, unde officia! A distinctio est porro. Eaque, odit nesciunt
+              quidem dolorum rem tempora cum dignissimos explicabo distinctio
+              dolor fugit autem. Placeat est repellat officiis illum.
+            </p>
+            <button
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#reg-modal"
+            >
+              Register for updates
+            </button>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
     <!-- footer -->
+
+    <!-- modal -->
+    <div
+      class="modal fade"
+      id="reg-modal"
+      tabindex="-1"
+      aria-labelledby="modal-title"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal-title">Get the Latest Updates</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="close"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto
+              eos inventore, autem praesentium maiores ad debitis dolorem
+              perferendis laborum beatae voluptate vitae quisquam non quae! Eos
+              beatae, in vel obcaecati doloribus facere eaque dolorum animi
+              recusandae minus saepe odit numquam.
+            </p>
+            <label for="modal-email" class="form-label"
+              >Your email address</label
+            >
+            <input
+              type="email"
+              name=""
+              id="modal-email"
+              class="form-control"
+              placeholder="e.g. mario@exmaple.com"
+            />
+          </div>
+
+          <div class="modal-footer">
+            <button class="btn btn-primary" data-bs-dismiss="modal">
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal -->
+
+    <!-- off-canvas -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="sidebar"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          Some text as placeholder. In real life you can have the elements you
+          have chosen. Like, text, images, lists, etc.
+        </div>
+        <div class="dropdown mt-3">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton"
+            data-bs-toggle="dropdown"
+          >
+            Dropdown button
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- off-canvas -->
 
     <!-- bootstrap script bundle -->
     <script
